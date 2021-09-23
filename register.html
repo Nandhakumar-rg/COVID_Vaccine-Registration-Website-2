@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Register
+        </title>
+        <link rel = "icon" href = 
+        "vaccine.png" 
+                type = "image/x-icon">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light py-sm-0" style="background-color: white; z-index: 8;
+    padding-left: 50px;
+    padding-right: 10px;
+    display:flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);">
+        <a class="navbar-brand" href="#"><img src="logo.jpeg" width="150" class="d-inline-block"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style=" color: black;margin-left: 5%;
+          font-weight: bold;
+          font-family: cosmic,sans-serif;
+          font-size: 15px;
+          text-align: center;">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="font-size: 20px;">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true"style="font-size: 20px;">
+                Register
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="login.html"style="font-size: 20px;">Login</a>
+                <a class="dropdown-item" href="register.html"style="font-size: 20px;">Register</a>
+              </div>
+              
+            <li class="nav-item">
+              <a class="nav-link" href="support.html"style="font-size: 20px;">Support us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"style="font-size: 20px;">Contact us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true"style="font-size: 20px;">
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="process.html"style="font-size: 20px;">Process</a></li>
+              <li><a class="dropdown-item" href="covidcases.html"style="font-size: 20px;">Covid Cases</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h5 style="margin-left: 12%;margin-top: 0px;margin-bottom: 0px;font-family:cosmic sans-serif;font-weight: bold;">VACCINE REGISTRATION</h5>
+        </div>
+      </nav>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <div class="register_form">
+            <form name="submit-sheet" method="POST">
+               <br> <h2 style="text-align: center;">REGISTER</h2><br>
+               &emsp;&emsp; NAME: <input style="display: inline;
+                width:38%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" type="text" name="Username"  placeholder="Full Name" pattern="[A-Za-z]{3-30}" maxlength="30" size="30" required>
+                &emsp;D.O.B: &emsp;&emsp;<input style="
+                width:30%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" type="date" name="birthday" min="1930-01-01" max="2003-01-01" required><br><br>
+               &emsp;&emsp; AGE:&emsp; <input style="display: inline;
+                width:38%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" type="number" min="18" max="90" name="age" placeholder="Age" required >
+            
+            &emsp; GENDER: <div class="gender">
+               <input type="radio" id="html" name="gender" value="Male">
+                 <label for="html">Male</label>
+                 <input type="radio" id="css" name="gender" value="Female">
+                 <label for="css">Female</label>
+                 <input type="radio" id="javascript" name="gender" value="Other">
+                 <label for="javascript">Other</label>
+                       </div><br><br>
+                      
+                       &emsp;&emsp; EMAIL: <input style="display: inline;
+                width:38%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" type="email" name="email" placeholder="Email" required>
+               &emsp; PHONE.NO: <input style="display: inline;
+                width:30%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" type="text" name="number"  placeholder="Contact Number" pattern="[0-9]{10}" required><br><br>
+               &emsp;&emsp; AADHAR: <input style="display: inline;
+                width:37%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" type="text" name="aadhar" placeholder="Aadhar number" pattern="[0-9]{12}"  required>
+               &emsp; DOSE.NO: <input type="radio" name="dose" value="dose1" checked>1ST DOSE
+                         <input type="radio" name="dose" value="dose2">2ND DOSE<br><br>
+                         &emsp;&emsp;HOSPITAL:<select name="hospital" style="display: inline;
+                width:38%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
+                            <option value="none" selected>SELECT HOSPITAL</option>
+                            <option value="gvt.hospital,arialur" >gvt.hospital,arialur</option>
+                            <option value="gvt.hospital,bhavani">gvt.hospital,bhavani</option>
+                            <option value="pgvt.hospital,cuddalore">gvt.hospital,cuddalore</option>
+                            <option value="gvt.hospital,dindigul">gvt.hospital,dindigul</option>
+                            <option value="gvt.hospital,erode">gvt.hospital,erode</option>
+                            <option value="gvt.hospital,gobi">gvt.hospital,gobi</option>
+                            <option value="gvt.hospital,hosur">gvt.hospital,hosur</option>
+                            <option value="gvt.hospital,imbur">gvt.hospital,imbur</option>
+                            <option value="gvt.hospital,jodambu">gvt.hospital,jodambur</option>
+                            <option value="gvt.hospital,kodaikanal">gvt.hospital,kodaikanal</option>
+                            <option value="gvt.hospital,lukyankotai">gvt.hospital,lukyankotai</option>
+                            <option value="gvt.hospital,madurai">gvt.hospital,madurai</option>
+                            <option value="gvt.hospital,natham">gvt.hospital,natham</option>
+                            <option value="gvt.hospital,oddanchatram">gvt.hospital,oddanchatram</option>
+                            <option value="gvt.hospital,perambalur">gvt.hospital,perambalur</option>
+                            <option value="gvt.hospital,salem">gvt.hospital,salem</option>
+                            <option value="gvt.hospital,vellore">gvt.hospital,vellore</option>
+                            <option value="gvt.hospital,tiruchy">gvt.hospital,tiruchy</option>
+                            <option value="gvt.hospital,vanampaakam">gvt.hospital,vanampaakam</option> required
+                        </select>
+                        &emsp; VACCINE:<select style="display: inline;
+                width:30%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" name="vaccine" onfocus='this.size=5' onblur='this.size=1;' onchange='this.size=1; this.blur();'required >
+                    <option value="none" selected>SELECT VACCINE</option>
+                    <option value="COVID SHIELD" >COVID SHIELD</option>
+                    <option value="CO VAXINE" >COVAXINE</option>
+                </select><br><br>
+                &emsp;&emsp; ADDRESS: <textarea style="
+                width:38%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" name="address" rows="6" cols="30" placeholder="Enter Your Address" required></textarea>
+                DATE OF APPOINMENT: <input style="display: inline;
+                width:15%;
+                margin: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-left: 5px solid orangered;" type="date" name="appoinment" min="2021-01-01" max="2021-12-31" required><br>
+               &emsp;&emsp; T&C: <input type="radio" name="TC" value="YES" checked>I herby accept the term and conditions and i will cooperate with that in any case&nbsp<b>YES</b><br><br>
+               &emsp;&emsp; &emsp; &emsp;<input type="radio" name="TC" value="NO">I'm not willing to aacept my terms and condtion and i will pay fine&nbsp<b>NO</b><br>
+                
+               &emsp;&emsp; &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="submit">REGISTER</button>
+                <button type="reset">RESET</button>
+            </form>
+            <script type="text/javascript">
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxPRejnEp-nLCsnf1rt9kHWwgbVte1iIxhM0ItbFykWoDTW2chvdUCPLo0YPxbqTm-0/exec'
+            const form = document.forms['submit-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Registering, Your Vaccine Registered Successfully"))
+                .catch(error => console.error('Error!', error.message))
+            })
+            </script>
+        </div>

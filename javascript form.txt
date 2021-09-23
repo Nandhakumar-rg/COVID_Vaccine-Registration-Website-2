@@ -1,0 +1,18 @@
+        <script type="text\javascript">
+            function validation(){
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+
+                var usercheck = /^[A-Za-Z]{3,30}$/;
+                var passwordcheck = /^[A-Za-z_0-9.@]{3,15}$/;
+
+                if (usercheck.test(username)) {
+                    document.getElementById('errorname').innerHtml = " ";
+                }
+                else{
+                    document.getElementById('errorname').innerHTML ="**Invalid Name";
+                    return false;
+                }
+            }
+        </script>
+    </body>
